@@ -1,0 +1,2 @@
+class PassphraseError(BaseException):
+    pass
