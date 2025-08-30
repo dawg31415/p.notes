@@ -19,7 +19,7 @@ simple encrypted notes console app . made for fun in one day\
 # usage
 ### . init storage
 ```python main.py init```\
-*you'll be asked if you want to make a copy of the current db, if one exists and to make a passphrase you'll use then to login*
+*you'll be asked if you want to make a copy of the current db, if one exists, and to make a passphrase you'll use then to login*
 ### . create a note
 ```python main.py add [--time TIME {HH:MM}] [--name NAME] [--content CONTENT]```\
 *you are not forced to specify note's info in the command. if you don't, you'll be asked for that later*
