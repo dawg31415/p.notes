@@ -2,7 +2,10 @@ import gnupg
 import os
 from constants.consts import GPGEXT
 
-gpg = gnupg.GPG(gnupghome='/home/dawggg/.gnupg')
+path = '~/.gnupg'
+exp_path = os.path.expanduser(path)
+gpg = gnupg.GPG(gnupghome=exp_path)
+
 
 def encrypt(filepath: str, passphrase: str, clean: bool = True) -> None:
     with open(filepath, "rb") as f:
